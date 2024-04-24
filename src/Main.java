@@ -70,8 +70,8 @@ public class Main {
         int accumulations = 29000;
         int percentages = 0;
         for (byte month2 = 1; month2 <= 12; month2++){
-            percentages = percentages + percentages / 100;
             percentages = percentages + accumulations;
+            percentages += percentages * 0.01;
             System.out.println("Месяц " + month2 + ", сумма накопления равна " + percentages + " рублей");
         }
 
